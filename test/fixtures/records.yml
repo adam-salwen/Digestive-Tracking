@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rType: 1
+  dateTime: 2016-08-20 16:27:35
+  pooVolume: 1
+  foodMedIn: MyString
+  labName: MyString
+  labVal: 1
+
+two:
+  rType: 1
+  dateTime: 2016-08-20 16:27:35
+  pooVolume: 1
+  foodMedIn: MyString
+  labName: MyString
+  labVal: 1

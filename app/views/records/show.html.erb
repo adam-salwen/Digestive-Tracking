@@ -1,0 +1,34 @@
+<p>
+  <strong>Datetime:</strong>
+  <%= @record.dateTime %>
+</p>
+ 
+<p>
+  <strong>Type:</strong>
+  <%= @record.rType %>
+</p>
+
+<p>
+  <strong>pooVolume:</strong>
+  <%= @record.pooVolume %>
+</p>
+ 
+<p>
+  <strong>foodMedIn:</strong>
+  <%= @record.foodMedIn %>
+</p>
+
+<p>
+  <strong>labName:</strong>
+  <%= @record.labName%>
+</p>
+
+<p>
+  <strong>labVal:</strong>
+  <%= @record.labVal %>
+</p>
+ 
+
+ 
+<%= link_to 'New Record', new_record_path %>
+<%= link_to 'Records list', records_path %>

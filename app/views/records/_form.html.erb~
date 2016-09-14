@@ -1,0 +1,65 @@
+<%= form_for @record do |f| %>
+
+
+<% if @record.errors.any? %>
+<div id="error_explanation">
+  <h2>
+    <%= pluralize(@record.errors.count, "error") %> prohibited this record from being saved:
+  </h2>
+  <ul>
+    <% @record.errors.full_messages.each do |msg| %>
+    <li><%= msg %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+    
+<p>
+    <%= f.label :datetime %><br>
+    <%= f.datetime_select :dateTime, :ampm => true, :minute_step => 15 %>
+  </p>
+ 
+<p>
+  <%= radio_button_tag(:type, 1) %>
+  <%= label_tag(:poop, "I pooped") %>
+
+  <%= radio_button_tag(:type, 2) %>
+  <%= label_tag(:fart, "I farted") %>
+  
+  <%= radio_button_tag(:type, 3) %>
+  <%= label_tag(:lab, "Lab Result") %>
+
+  <%= radio_button_tag(:type, 4) %>
+  <%= label_tag(:input, "Input") %>
+</p>
+
+<p>
+  <%= radio_button_tag(:pooVolume, "1") %>
+  <%= label_tag(:small, "small") %>
+
+  <%= radio_button_tag(:pooVolume, "2") %>
+  <%= label_tag(:medium, "medium") %>
+  
+  <%= radio_button_tag(:pooVolume, "3") %>
+  <%= label_tag(:large, "large") %>  
+</p>
+
+<p>
+   <%= f.label :Input %><br>
+   <%= f.text_field :foodMedIn %>
+</p>
+
+<p>
+   <%= f.label :LabTest %><br>
+   <%= f.text_field :labName %>
+</p>
+
+<p>
+   <%= f.label :LabValue %><br>
+   <%= f.text_field :labVal %>
+</p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

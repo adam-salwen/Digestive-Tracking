@@ -1,0 +1,23 @@
+<%= form_for :record, url: records_path do |f| %>
+  <p>
+    <%= f.label :datetime %><br>
+    <%= f.datetime_select :dateTime, :ampm => true, :minute_step => 15 %>
+  </p>
+ 
+  <p>
+    <%= f.label :myResult %><br>
+    <%= f.check_box :myResult %>
+  </p>
+  <p>
+    <%= f.label :labResult %><br>
+    <%= f.check_box :labResult %>
+  </p>
+  <p>
+    <%= f.label :input %><br>
+    <%= f.check_box :inputVal %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
