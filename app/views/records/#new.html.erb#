@@ -1,0 +1,6 @@
+<script type='text/javascript' src='javascript/records/form.js'></script>
+
+
+<%= render 'form' %>
+
+<%= link_to 'Records list', records_path %>

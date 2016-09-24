@@ -1,3 +1,6 @@
+<script type='text/javascript' src='javascript/records/form.js'></script>
+
+
 <%= form_for @record do |f| %>
 
 
@@ -20,16 +23,16 @@
   </p>
  
 <p>
-  <%= f.radio_button(:rType, '1') %>
+  <%= f.radio_button(:rType, "1") %>
   <%= label_tag(:poop, "I pooped") %>
 
-  <%= f.radio_button(:rType, '2') %>
+  <%= f.radio_button(:rType, "2") %>
   <%= label_tag(:fart, "I farted") %>
   
-  <%= f.radio_button(:rType, '3') %>
+  <%= f.radio_button(:rType, "3") %>
   <%= label_tag(:lab, "Lab Result") %>
 
-  <%= f.radio_button(:rType, '4') %>
+  <%= f.radio_button(:rType, "4") %>
   <%= label_tag(:input, "Input") %>
 </p>
 
@@ -63,3 +66,5 @@
     <%= f.submit %>
   </p>
 <% end %>
+
+<button type="button">Click Me!</button>
