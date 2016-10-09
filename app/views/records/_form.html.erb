@@ -17,12 +17,12 @@
 </div>
 <% end %>
     
-<p>
+<p id="dateTime">
     <%= f.label :datetime %><br>
     <%= f.datetime_select :dateTime, :ampm => true, :minute_step => 15 %>
   </p>
  
-<p>
+<p id="rType">
   <%= f.radio_button(:rType, "1") %>
   <%= label_tag(:poop, "I pooped") %>
 
@@ -36,7 +36,7 @@
   <%= label_tag(:input, "Input") %>
 </p>
 
-<p>
+<p id="pooVolume">
   <%= f.radio_button(:pooVolume, "1") %>
   <%= label_tag(:small, "small") %>
 
@@ -47,17 +47,17 @@
   <%= label_tag(:large, "large") %>  
 </p>
 
-<p>
+<p id="foodMedIn">
    <%= f.label :Input %><br>
    <%= f.text_field :foodMedIn %>
 </p>
 
-<p>
+<p id="labName">
    <%= f.label :LabTest %><br>
    <%= f.text_field :labName %>
 </p>
 
-<p>
+<p id="labVal">
    <%= f.label :LabValue %><br>
    <%= f.text_field :labVal %>
 </p>
