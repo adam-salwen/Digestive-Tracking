@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    $("body").append("<p> Testing Testing 123 </p>");
     $('p#pooVolume').hide()
     $('p#foodMedIn').hide();
     $('p#labName').hide();
