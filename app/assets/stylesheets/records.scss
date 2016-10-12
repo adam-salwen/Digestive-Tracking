@@ -1,3 +1,29 @@
 // Place all the styles related to the records controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+}
+table, th, td {
+   border: 1px solid black;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+th {
+   height: 70 px;
+   background-color: #4CAF50;
+   color: white;
+}
+td {
+   text-align: center;
+}
+#DateTime {
+   text-align: right;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2}
