@@ -3,7 +3,7 @@
 To run server (SLL enabled), enter command
 $  RAILS_SSL=true rails s -p 3001
 
-
+Password is currently set in config/initializers/user.rb change this for your own deployment.
 
 
 

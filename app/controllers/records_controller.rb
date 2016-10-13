@@ -1,5 +1,6 @@
 class RecordsController < ApplicationController
-
+  before_filter :authenticate, :except => [:index, :show]
+  
   def index
     @records = Record.all
   end
