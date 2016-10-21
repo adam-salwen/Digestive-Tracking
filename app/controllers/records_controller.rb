@@ -1,6 +1,7 @@
+
 class RecordsController < ApplicationController
   before_filter :authenticate, :except => [:index, :show]
-  
+ 
   def index
     @records = Record.all
   end
@@ -10,6 +11,8 @@ class RecordsController < ApplicationController
   
   def new
     @record = Record.new
+    @test = "Testing"
+    @dateTime = DateTime.now
   end
 
   def edit
@@ -18,6 +21,7 @@ class RecordsController < ApplicationController
   
   def create
     @record = Record.new(record_params)
+
 
     if @record.save
       redirect_to @record
